@@ -29,6 +29,11 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return new MaterialApp(title:"My App",
       home:new HomePage(),
+      theme: new ThemeData(primaryColor: Colors.black,
+        primaryColorBrightness: Brightness.dark,
+        brightness: Brightness.dark,
+        primarySwatch: Colors.green
+      ),
     );
   }
 }
@@ -65,11 +70,11 @@ class _HomePageState extends State<HomePage> {
         child: new Column(
           mainAxisAlignment:MainAxisAlignment.center,
           children: <Widget>[
-            new Text(mytext,style: new TextStyle(color: Colors.black,fontSize: 30.0),),
+            new Text(mytext,style: new TextStyle(color: Colors.white,fontSize: 30.0),),
             new RaisedButton(
                 child: new Text("Button",style: new TextStyle(color: Colors.white,fontSize: 20.0),),
                 onPressed: _ChangeText,
-                color: Colors.blue,
+                color: Colors.red,
 
 
             )
