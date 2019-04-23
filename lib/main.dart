@@ -71,13 +71,14 @@ class _HomePageState extends State<HomePage> {
           mainAxisAlignment:MainAxisAlignment.center,
           children: <Widget>[
             new Text(mytext,style: new TextStyle(color: Colors.white,fontSize: 30.0),),
-            new RaisedButton(
-                child: new Text("Button",style: new TextStyle(color: Colors.white,fontSize: 20.0),),
-                onPressed: _ChangeText,
-                color: Colors.red,
+//            new RaisedButton(
+//                child: new Text("Button",style: new TextStyle(color: Colors.white,fontSize: 20.0),),
+//                onPressed: _ChangeText,
+//                color: Colors.red,
+//
+//
+//            )
 
-
-            )
           ],
         ),
       ),
@@ -93,7 +94,13 @@ class _HomePageState extends State<HomePage> {
       title: new Text("Home Page"),
 
     ),
-    body: _bodyWidget()
+    body: _bodyWidget(),
+      floatingActionButton: new FloatingActionButton(
+          backgroundColor: Colors.red,
+          child: new Icon(Icons.add),
+          onPressed: _ChangeText,
+
+      ),
     );
   }
 }
