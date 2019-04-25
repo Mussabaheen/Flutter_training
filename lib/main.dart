@@ -53,10 +53,10 @@ class _HomePageState extends State<HomePage> {
   void _ChangeText()
   {
       setState(() {
-        if(mytext.startsWith('H'))
-            mytext="Welcome to my app";
+        if(mytext.startsWith('M'))
+            mytext="Hammad Farooq";
         else
-            mytext="Hello World";
+            mytext="Mussabaheen Malik";
       });
 
   }
@@ -96,7 +96,7 @@ class _HomePageState extends State<HomePage> {
     ),
     body: _bodyWidget(),
       floatingActionButton: new FloatingActionButton(
-          backgroundColor: Colors.red,
+          backgroundColor: Colors.blue,
           child: new Icon(Icons.add),
           onPressed: _ChangeText,
 
